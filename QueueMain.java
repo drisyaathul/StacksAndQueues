@@ -12,5 +12,19 @@ public class QueueMain {
         queue.append(70);
         queue.display();
         System.out.println("---------------------------------------");
+        /*
+        UC4: Dequeue from the beginning
+         */
+        queue.display();
+        Integer deQueue;
+        do {
+            deQueue = queue.pop();
+            if (deQueue == null)
+                System.out.println("Queue is Empty");
+            else
+                System.out.println("Dequeue the element is "+deQueue);
+            queue.display();
+        }
+        while (deQueue != null);
     }
 }
